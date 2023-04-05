@@ -1,5 +1,5 @@
 
-import { StatusBar, SafeAreaView, View} from 'react-native';
+import { StatusBar, SafeAreaView} from 'react-native';
 import {useFonts, Montserrat_400Regular,Montserrat_700Bold, Montserrat_400Regular_Italic} from '@expo-google-fonts/montserrat'
 import Cesta from './src/pages';
 import moks from './src/moks/cesta';
@@ -19,7 +19,7 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1}}>
       <StatusBar />
       <Cesta {...moks}/>
 
